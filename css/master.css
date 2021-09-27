@@ -1,0 +1,125 @@
+:root {
+  --background-color: #16151a;
+  /*#17161c*/
+  --main-font: "SerifDisplay";
+
+  --emphasis-color: #6146ed;
+
+  --emphasis-color-alt:#523BC4;
+
+  --emphasis-color-2: #DEB359;
+
+  --white-color: #DEDEDE;
+
+}
+*{
+  transition: 0.3s;
+}
+
+@font-face {
+  font-family: "SerifDisplay";
+  src: url("/font/DMSerifDisplay-Regular.ttf") format("truetype");
+  /*Uso la diagonal al inico ya que la carpeta font esta fuera de la carpeta css*/
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  color: var(--white-color);
+  
+  /* background: linear-gradient(45deg, #000000, 20%, #3f0071); */
+}
+.header-div {
+  /* background-color: #150050; */
+  color: var(--white-color);
+  font-size: 20px;
+  margin: 40px 40px 20px 40px;
+  
+}
+
+.header-title{
+  margin: 0;
+  font-size: 40px;
+  display: inline;
+}
+
+.header-table{
+  border: none;
+  border-collapse: collapse;
+  float: right;
+  right: 20px;
+  
+}
+
+.td-header-table{
+  height: 40px;
+  width: 20%;
+  text-align: right;
+  transition: .5s;
+
+}
+
+.emphasis-purple-word{
+  color: var(--emphasis-color);
+  display: inline;
+}
+
+.td-header-table:hover{
+  color: var(--emphasis-color-2);
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.header-title:hover{
+  letter-spacing: 5px;
+  color: var(--emphasis-color-alt)
+}
+
+.wrap-content-div{
+  font-size: 60px;
+  margin: 0 40px;
+  height: 850px;
+}
+.content-div{
+
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 50%;
+  margin-top: 550px;
+  
+}
+
+.image-div{
+  display: block;
+  float: right;
+}
+
+.main-image{
+  height: 800px;
+  border-radius: 30px;
+}
+
+.main-image:hover{
+    border-radius: 50px;
+}
+
+
+.bottom-div{
+  background: var(--emphasis-color-2);
+  text-align: center;
+  padding: 10px 5px 5px 5px;
+}
+
+.footer-link{
+  color: white;
+  margin: 40px;
+  font-family: var(--main-font);
+  text-decoration: none;
+}
+
+.credits{
+  color: white;
+  margin: 0;
+  font-family: var(--main-font);
+}
+
